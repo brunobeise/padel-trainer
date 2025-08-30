@@ -61,7 +61,7 @@ export function Home({ onNewSession, onViewReport }: HomeProps) {
                   {session.athlete} · {session.drill}
                 </div>
                 <div className="text-sm text-gray-600">
-                  Média {mean(session.attempts).toFixed(2)} ·{" "}
+                  Nota {mean(session.attempts).toFixed(2)} ·{" "}
                   {formatDate(session.createdAt)}
                 </div>
               </div>

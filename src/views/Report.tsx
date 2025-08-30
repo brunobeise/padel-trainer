@@ -41,7 +41,7 @@ export function Report({ session, onBackHome }: ReportProps) {
         </div>
 
         <div>
-          <h2 className="font-medium text-gray-600">Média</h2>
+          <h2 className="font-medium text-gray-600">Nota</h2>
           <p className="text-lg">{media.toFixed(2)}</p>
         </div>
 
