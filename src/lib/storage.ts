@@ -25,3 +25,8 @@ export function saveSession(session: Session): void {
   sessions.unshift(session);
   localStorage.setItem(KEYS.SESSIONS, JSON.stringify(sessions));
 }
+
+export function deleteSession(id: string): void {
+  const sessions = loadSessions().filter(s => s.id !== id);
+  localStorage.setItem(KEYS.SESSIONS, JSON.stringify(sessions));
+}
